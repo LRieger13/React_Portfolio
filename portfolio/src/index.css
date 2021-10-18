@@ -1,0 +1,12 @@
+/************* NAVBAR ***************/
+.navbar-brand {
+    width: 5rem;
+    padding: 1rem;
+}
+
+/************* LINKS **************/
+nav a.nav-link {
+    font-weight: 500;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+}
