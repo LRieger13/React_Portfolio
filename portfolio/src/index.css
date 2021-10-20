@@ -1,3 +1,11 @@
+/************* FONTS ****************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+/************* BODY ***************/
+body {
+font-family: "Open Sans Condensed";
+}
+
 /************* NAVBAR ***************/
 .navbar-brand {
     width: 5rem;
@@ -9,4 +17,16 @@ nav a.nav-link {
     font-weight: 500;
     letter-spacing: 0.0375rem;
     cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed";
+}
+
+nav a.nav-link:hover {
+    border-top: 0.1875rem solid #DDAC2A;
+    font-weight: bolder;
+}
+
+nav a.nav-link:focus {
+    border-top: 0.1875rem solid #DDAC2A;
+    font-weight: bolder;
 }
