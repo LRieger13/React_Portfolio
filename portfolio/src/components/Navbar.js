@@ -1,36 +1,48 @@
 import React from "react";
+import ReactDOM from "react-dom";
 // import logo from src file
-import geo_bee from "../Images/geo_bee.png";
+import TBeeGold from "../Images/TBeeGold.png";
+// import fontawesome
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+
+// NEED TO FIX COLLAPSE -- won't open with menu?
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"> 
-      {/* INSERT LOGO HERE */}
-        <img src={geo_bee} alt="" /></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src={TBeeGold} alt=""></img>
+      </a>
       <button
-        className="navbar-toggler"
+        class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <FontAwesomeIcon icon={ faBars } style={{ color: "#fff" }} />
       </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <a className="nav-item nav-link active" href="#">
-            Home <span class="sr-only"></span>
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Portfolio
-          </a>
-          <a className="nav-item nav-link" href="#">
-            Contact
-          </a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Portfolio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );
