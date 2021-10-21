@@ -30,3 +30,32 @@ nav a.nav-link:focus {
     border-top: 0.1875rem solid #DDAC2A;
     font-weight: bolder;
 }
+
+/************* HEADER **************/
+.header-wrapper {
+    position: relative;
+    background: url(./Images/honey.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.main-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: "Open Sans Condensed";
+}
+
+.main-info h1 {
+    color: #DDAC2A;
+    text-transform: uppercase;
+}
+
+/************* TYPED **************/
+.typed-text {
+    font-size: 2rem;
+    color:#ECE9EE;
+}

@@ -2,13 +2,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Navbar from './components/Navbar';
+import Header from './components/Header';
 
 
 // a function that is usable as an component
 // jsx code 
 function App() {
   return (
-    <Navbar />
+    <>
+      <Navbar />
+      <Header />
+    </>
   );
 }
 
