@@ -42,20 +42,39 @@ nav a.nav-link:focus {
 
 .main-info {
    display: flex;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    text-align: center;
    font-family: "Open Sans Condensed";
+   background-color: #3d3d3d2d;
 }
 
 .main-info h1 {
-    color: #DDAC2A;
+    color: #3d3d3d;
     text-transform: uppercase;
 }
 
 /************* TYPED **************/
 .typed-text {
     font-size: 2rem;
-    color:#ECE9EE;
+    color:rgb(117, 71, 10);
+}
+
+.btn-main-offer {
+    border: 1px dashed #3d3d3d;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color:#3d3d3d;
+    text-decoration: none;
+}
+
+.btn-main-offer:hover {
+    color:#DDAC2A;
 }
