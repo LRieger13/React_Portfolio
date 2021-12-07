@@ -1,18 +1,18 @@
 // import components at top
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./components/Layout/Pages/";
 
 // a function that is usable as an component
-// jsx code 
+// jsx code
 function App() {
   return (
-    <>
-      <Navbar />
-      <Header />
-    </>
+    <Router>
+      <Route path="/" component={Home} />
+    </Router>
   );
 }
 
